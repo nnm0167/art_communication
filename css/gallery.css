@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+#content2 {
+  background-color: #EBD970;
+}
+
+img.door {
+  width: 130px;
+  height: auto;
+}
+
+#doors {
+  width: 690px;
+  height: 230px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.a, .b, .c {
+  float: left;
+  width: 130px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0;
+}
+
+#position {
+  position: relative;
+  background-color: #EBD970;
+  margin-top: 100px;
+  display: none;
+}
+
+.box1,
+.box2,
+.box3 {
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50%;
+  background-color: white;
+  padding: 80px;
+  /*flaxbox*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  margin-bottom: 70px;
+}
+
+.item img {
+  width: 200px;
+}
+
+img.size {
+  width: 100px;
+  padding: 0 70px;
+}

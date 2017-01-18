@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/*****共通設定*****/
+html {
+ font-family:
+ "MyYuGothicM", "YuGothic", "-apple-system", "BlinkMacSystemFont", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+ font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing : 2.6px;
+  font-weight: bold;
+}
+
+p {
+  font-size : 1.1em;
+  line-height : 2em;
+  letter-spacing : 1.7px;
+  color : #333333;
+  text-align: center;
+}
+
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*------ヘッダー------*/
+header {
+  background-color: #F3FBFF;
+  width: auto;
+  height: 100vh;
+}
+
+.top_img {
+  position: relative;
+  padding-top: 175px;
+  display: block;
+  max-width: 280px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.logo_hidden {
+  position: absolute;
+  top: 180px;
+  visibility: hidden;
+}
+
+.nextpage {
+  display: block;
+  font-size: 1.3em;
+  letter-spacing : 2.6px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #777777;
+  color: #777777;
+  background-color: inherit;
+  width: 300px;
+  margin: auto;
+  margin-top: 150px;
+  padding: 20px 0;
+}
+
+.nextpage:hover {
+  color: #F49AC9;
+  border: 1px solid #F49AC9;
+}
+
+/*------メイン------*/
+main{
+  background-color: #F3FBFF;
+}
+
+/***ナビ***/
+#summary {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #76C1E5;
+}
+
+nav {
+  margin: 0 auto 60px;
+  width: 140px;
+  height: 25px;
+  padding-top: 48px;
+  text-align: center;
+  color: #666666;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing : 2.6px;
+  border-bottom: 1px solid #666666;
+}
+
+#summary h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#summary p {
+  max-width: 660px;
+  width:80%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+img.boy {
+  display: block;
+  margin: auto;
+  width: 420px;
+  height: auto;
+  margin-top: 58px;
+}
+
+/***メニュー***/
+
+#wrap {
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
+}
+
+#wrap img {
+  height: 120px;
+  margin: 0 100px 50px;
+}
+
+h2.ttl {
+  order: 2;
+  font-size : 1.3em;
+  font-weight: bold;
+  color : #666666;
+}
+
+.category1 {
+  order: 1;
+}
+
+.category2 {
+  order: 3;
+}
+
+.category_title{
+  font-size : 1.5em;
+  letter-spacing : 5.1px;
+  font-weight: bold;
+  color : #D99AA9;
+}
+
+.category1 :hover , .category2 :hover{
+  color: green;
+}
+
+.category2 p {
+  color : #D0C559;
+}
+
+/***コンテンツボーダー***/
+hr {
+  border-width: 0px 0px 1px 0px;
+  width: 80%;
+  padding-top: 38px;
+  margin-top: 0px;
+  margin-bottom: 38px;
+  border-color: white;
+  background-color: inherit;
+}
+
+hr.content_end {
+  border-width: 1px 0px 0px 0px;
+  margin-top: 38px;
+  margin-bottom: 0px;
+}
+
+/***コンテンツ共通***/
+#content1 h2,#content2 h2 {
+  font-weight: bold;
+  color: white;
+  font-size: 1.4em;
+  margin-top: 58px;
+}
+
+.c_topimg {
+  display: block;
+  width: 188px;
+  margin-top: 48px;
+  margin-bottom: 43px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content1 p, #content2 p {
+  color: white;
+}
+
+/***コンテンツ１***/
+#content1 {
+  background-color: #DD9FB4;
+  position: relative;
+}
+
+
+.content1_img {
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-top: 60px;
+  position: relative;
+}
+
+/*******バルーン*******/
+img.balloon1 {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  top: 327px;
+  left: 313px;
+}
+
+img.balloon2 {
+  position: absolute;
+  width: 42px;
+  height: auto;
+  top: 705px;
+  right: 319px;
+}
+
+img.balloon3 {
+  position: absolute;
+  width: 34px;
+  height: auto;
+  top: 780px;
+  left: 336px;
+}
+
+/*******レター*******/
+#letters {
+  position: relative;
+  width: 680px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+img.letter {
+  position: absolute;
+  width: 60px;
+  height: auto;
+}
+
+.letter_hidden {
+  visibility: hidden;
+}
+
+.letter1 {
+  position: absolute;
+  top: 136px;
+  left: 246px;
+  transform: scale(-1, 1);
+}
+.letter2 {
+  position: absolute;
+  top: 114px;
+  left: 490px;
+}
+.letter3 {
+  position: absolute;
+  top: 301px;
+  left: 54px;
+}
+.letter4 {
+  position: absolute;
+  top: 242px;
+  left: 362px;
+  transform: scale(-1, 1);
+}
+.letter5 {
+  position: absolute;
+  top: 242px;
+  left: 502px;
+}
+.letter6 {
+  position: absolute;
+  top: 397px;
+  left: 279px;
+}
+.letter7 {
+  position: absolute;
+  top: 353px;
+  left: 488px;
+  transform: scale(-1, 1);
+}
+.letter8 {
+  position: absolute;
+  top: 397px;
+  right: 0px;
+  transform: scale(-1, 1);
+}
+.letter9 {
+  position: absolute;
+  top: 501px;
+  left: 145px;
+  transform: scale(-1, 1);
+}
+.letter10 {
+  position: absolute;
+  top: 520px;
+  left: 510px;
+  transform: scale(-1, 1);
+}
+.letter11 {
+  position: absolute;
+  top: 616px;
+  left: 334px;
+}
+
+.letter1,
+.letter4,
+.letter7,
+.letter8,
+.letter9,
+.letter10,{
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+}
+
+/*------フッター------*/
+footer {
+  clear: both;
+}
+
+
+footer button {
+  display: block;
+  width: 80px;
+  height: 95px;
+  margin: 0 auto;
+  margin-top:105px;
+}
+
+.logo_end {
+  width: 80px;
+}
+
+small {
+  display: block;
+  text-align: center;
+  font-size : 0.9em;
+  letter-spacing : 0.72px;
+  color : #666666;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}

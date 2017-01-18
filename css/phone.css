@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+@media screen and ( max-width:479px )
+{
+/*****スマホ用*****/
+/***共通***/
+p {
+  font-size : 1.3em;
+  line-height : 2.0em;
+  letter-spacing : 0.05em;
+}
+
+/****ヘッダー****/
+.top_img {
+  position: relative;
+  padding-top: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.logo_hidden {
+  position: absolute;
+  top: 100px;
+}
+
+.nextpage {
+  margin-top: 70px;
+}
+
+/****メイン****/
+/*ナビ*/
+#summary {
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 60px;
+}
+
+#summary p {
+  width: 80%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#summary h2 {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+img.boy {
+    width: 80%;
+}
+
+/*メニュー*/
+#wrap {
+  flex-direction: column;
+}
+
+#wrap img {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.ttl {
+  padding: 90px;
+}
+
+/***コンテンツ共通***/
+#content1 h2, #content2 h2 {
+    margin-top: 0px;
+}
+
+.c_topimg {
+  width: 110px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*******レター*******/
+#letters {
+  position: relative;
+  width: 260px;
+  height: 641px;
+  margin: 0 auto;
+}
+
+img.letter {
+  width: 50px;
+  height: auto;
+}
+
+.letter1 {
+  top: 60px;
+  left: 163px;
+}
+.letter2 {
+  top: 146px;
+  left: 9px;
+}
+.letter3 {
+  top: 118px;
+  left: 194px;
+}
+.letter4 {
+  top: 202px;
+  left: 208px;
+}
+.letter5 {
+  top: 260px;
+  left: 72px;
+}
+.letter6 {
+  top: 284px;
+  left: 205px;
+}
+.letter7 {
+  top: 338px;
+  left: 68px;
+}
+.letter8 {
+  top: 388px;
+  left: 207px;
+}
+.letter9 {
+  top: 454px;
+  left: 50px;
+}
+.letter10 {
+  top: 500px;
+  left: 208px;
+}
+.letter11 {
+  top: 547px;
+  left: 74px;
+}
+
+/*コンテンツ２*/
+
+img.door {
+  width: 75px;
+  height: auto;
+}
+
+#doors {
+  width: 280px;
+  height: 110px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.a, .b, .c {
+  float: left;
+  width: 60px;
+  height: auto;
+  margin-left: 0px;
+  margin-right: 50px;
+  padding: 0;
+}
+.c {
+  margin-right:0px;
+}
+
+}
