@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and ( max-width:479px )
+@media screen and ( max-width:600px )
 {
 /*****スマホ用*****/
 /***共通***/
@@ -12,43 +12,102 @@ p {
 
 /****ヘッダー****/
 .top_img {
-  position: relative;
   padding-top: 100px;
-  display: block;
-  margin: 0 auto;
 }
+
 .logo_hidden {
-  position: absolute;
   top: 100px;
 }
 
-.nextpage {
-  margin-top: 70px;
+header p{
+  font-size : 1.2em;
+  letter-spacing : 8px;
+  height: 20px;
+  top: 240px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+header .nextpage {
+  position: absolute;
+  margin-top: 0px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
 }
 
 /****メイン****/
 /*ナビ*/
 #summary {
-  margin: 0 auto;
-  height: auto;
-  padding-bottom: 60px;
-}
-
-#summary p {
-  width: 80%;
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 67px;
+  display: flex;
+  flex-direction: column;
 }
 
 #summary h2 {
-  width: 80%;
-  margin: auto;
-  text-align: left;
+  width: 100%;
   font-size: 1.5em;
 }
 
-img.boy {
-    width: 80%;
+#summary p {
+  width: 100%;
+}
+
+#summary .left {
+  order: 1;
+}
+#summary .right {
+  width: 100%;
+  margin-top: 0px;
+  margin-right: auto;
+  order: 5;
+}
+
+#summary .h-right {
+  text-align: left;
+}
+
+.right .img_line {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.img-right {
+  position: static;
+  top: 0;
+  width: 100%;
+  margin-top: 54px;
+  margin-right: -20%;
+  margin-left: auto;
+  order: 2;
+}
+.img-left {
+  position: static;
+  top: 0;
+  width: 120%;
+  margin-top: -30px;
+  margin-bottom: 65px;
+  margin-right: auto;
+  margin-left: -20%;
+  order: 4;
+}
+
+.img_arrow {
+  position: static;
+  top: 0;
+  order: 3;
+}
+
+main .nextpage {
+  width: 80%;
+  margin-top: 90px;
+  margin-bottom: 95px;
+}
+
+main .nextpage:hover {
+  color: white;
+  border: 1px solid white;
 }
 
 /*メニュー*/
@@ -58,13 +117,13 @@ img.boy {
 
 #wrap img {
   display: block;
-  height: 100px;
+  height: 80px;
   margin: 0 auto;
   padding-bottom: 30px;
 }
 
 .ttl {
-  padding: 90px;
+  padding: 85px;
 }
 
 /***コンテンツ共通***/
@@ -76,6 +135,12 @@ img.boy {
   width: 110px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+img.balloon1,
+img.balloon2,
+img.balloon3{
+  display: none;
 }
 
 /*******レター*******/

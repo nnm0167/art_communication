@@ -8,9 +8,29 @@ $(function () {
 });
 
 
+$(document).ready(function(){
+  $('.fuwat').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.fuwat').each(function(){
+    var objectPosition = $(this).offset().top;
+    if(topWindow > objectPosition - windowHeight + 200){
+     $(this).addClass("fuwatAnime");
+    }
+   });
+  });
+});
+
+
 /*boxer*/
 $(function(){
 $(".boxer").boxer();
+});
+
+/*top_fadein*/
+$(function(){
+$(".top_img").velocity("fadeIn", { duration: 2500})
 });
 
 /*logo*/

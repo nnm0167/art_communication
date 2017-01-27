@@ -33,6 +33,27 @@ button {
   cursor: pointer;
 }
 
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
 /*------ヘッダー------*/
 header {
   background-color: #F3FBFF;
@@ -61,6 +82,16 @@ header {
   visibility: hidden;
 }
 
+header p{
+  font-size : 1.8em;
+  letter-spacing : 10.8px;
+  color : #76C1E5;
+  position: absolute;
+  top: 310px;
+  left: 0;
+  right: 0;
+}
+
 .nextpage {
   display: block;
   font-size: 1.3em;
@@ -70,7 +101,7 @@ header {
   border: 1px solid #777777;
   color: #777777;
   background-color: inherit;
-  width: 300px;
+  width: 250px;
   margin: auto;
   margin-top: 150px;
   padding: 20px 0;
@@ -83,60 +114,115 @@ header {
 
 /*------メイン------*/
 main{
-  background-color: #F3FBFF;
+  background-color: #76C1E5;
 }
 
 /***ナビ***/
 #summary {
+  position: relative;
   margin: 0 auto;
-  height: 100vh;
-  background-color: #76C1E5;
-}
-
-nav {
-  margin: 0 auto 60px;
-  width: 140px;
-  height: 25px;
-  padding-top: 48px;
-  text-align: center;
-  color: #666666;
-  font-size: 1.3em;
-  font-weight: bold;
-  letter-spacing : 2.6px;
-  border-bottom: 1px solid #666666;
+  width: 80%;
+  max-width: 815px;
+  padding-top: 140px;
 }
 
 #summary h2 {
+  text-align: left;
   color: white;
-  margin: 0;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  letter-spacing : 3px;
   font-weight: bold;
+  padding-bottom: 45px;
 }
 
 #summary p {
-  max-width: 660px;
-  width:80%;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 12px;
+  width: 300px;
   text-align: left;
+  color: white;
 }
 
-img.boy {
-  display: block;
-  margin: auto;
+#summary .right {
+  width: 300px;
+  margin-top: 170px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+#summary .h-right {
+  text-align: right;
+}
+
+.img_line {
+  width: 56px;
+  height: 9px;
+  background-image: url('../images/yellowline.png');
+  margin-bottom: 18px;
+}
+
+.right .img_line {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.img-right {
+  position: absolute;
+  width: 360px;
+  top: 190px;
+  right: 0px;
+}
+.img-left {
+  position: absolute;
   width: 420px;
-  height: auto;
-  margin-top: 58px;
+  top: 510px;
+  left: 0px;
 }
 
+.img_arrow {
+  position: absolute;
+  width: 64px;
+  height: 68px;
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  top: 453px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+main .nextpage {
+  font-size: 1.3em;
+  letter-spacing : 2.6px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #FFF100;
+  color: white;
+  width: 375px;
+  margin-top: 150px;
+  margin-bottom: 136px;
+}
+
+main .nextpage:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.img_nextpage {
+  width: 22px;
+  height: 14px;
+  background-image: url('../images/nextpage.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 /***メニュー***/
 
 #wrap {
- display: flex;
- height: 100vh;
- justify-content: center;
- align-items: center;
+  background-color: #F3FBFF;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 #wrap img {
@@ -167,7 +253,7 @@ h2.ttl {
 }
 
 .category1 :hover , .category2 :hover{
-  color: green;
+  color: #76C1E5;
 }
 
 .category2 p {
