@@ -50,6 +50,13 @@ img.door {
   align-items: center;
 }
 
+.box3 {
+  justify-content: center;
+  font-size: 1.2em;
+  color: #777777;
+  letter-spacing : 0.72px;
+}
+
 .item {
   margin-bottom: 70px;
 }
