@@ -78,23 +78,21 @@ header .nextpage {
   top: 0;
   width: 100%;
   margin-top: 54px;
-  margin-right: -20%;
-  margin-left: auto;
+  margin-bottom: 40px;
   order: 2;
 }
+
 .img-left {
   position: static;
   top: 0;
-  width: 120%;
-  margin-top: -30px;
+  width: 100%;
   margin-bottom: 65px;
-  margin-right: auto;
-  margin-left: -20%;
   order: 4;
 }
 
 .img_arrow {
   position: static;
+  width: 30px;
   top: 0;
   order: 3;
 }
